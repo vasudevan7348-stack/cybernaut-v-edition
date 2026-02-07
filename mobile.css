@@ -1,0 +1,86 @@
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-left-text {
+        font-size: 28px;
+        top: 20px;
+        left: 20px;
+        letter-spacing: 4px;
+    }
+
+    .join-button {
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .logo-image {
+        display: none;
+        /* Hide logo on mobile for clean look or reposition */
+    }
+
+    .tagline {
+        top: 100px;
+        left: 20px;
+        font-size: 24px;
+        width: 90%;
+        line-height: 1.4;
+    }
+
+    .show-course-button {
+        top: 220px;
+        left: 20px;
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .description-text {
+        top: 280px;
+        left: 20px;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .info-section {
+        top: 550px;
+        width: 90%;
+    }
+
+    .info-heading {
+        font-size: 24px;
+    }
+
+    .info-subheading {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .nav-buttons {
+        top: 1100px;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-button {
+        width: 80%;
+        text-align: center;
+    }
+
+    .spline-model {
+        top: 1600px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .bottom-bar {
+        top: 2000px;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .footer-content {
+        font-size: 14px;
+    }
+}

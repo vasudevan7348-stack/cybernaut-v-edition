@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(ellipse at center, rgba(80, 80, 80, 0.3) 0%, rgba(0, 0, 0, 0) 70%, #000000 100%), #000000;
+    width: 100%;
+    height: 100vh;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 40px rgba(138, 43, 226, 0.4)) drop-shadow(0 0 60px rgba(75, 0, 130, 0.3));
+    border-radius: 10px;
+}
+
+.top-left-text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(138, 43, 226, 0.3);
+}
+
+.join-button {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    padding: 14px 40px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 40px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.join-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5),
+        0 0 50px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.logo-image {
+    position: absolute;
+    top: 40px;
+    left: 405px;
+    width: 60px;
+    height: auto;
+}
+
+.tagline {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    max-width: 900px;
+    line-height: 1.3;
+}
+
+.show-course-button {
+    position: absolute;
+    top: 420px;
+    left: 40px;
+    padding: 16px 45px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.show-course-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.description-text {
+    position: absolute;
+    top: 500px;
+    left: 40px;
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.spline-model {
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    filter: grayscale(100%);
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 1250px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+
+
+.nav-button {
+    padding: 16px 40px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.info-section {
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 900px;
+    text-align: center;
+}
+
+.info-heading {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.info-subheading {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.info-text {
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.bottom-bar {
+    position: absolute;
+    top: calc(260% - 100px);
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+.address {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpCentered {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes fadeInUpCenteredBoth {
+    from {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% + 20px));
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.animate-in {
+    opacity: 0;
+    animation: fadeInUp 2s ease-in forwards;
+}
+
+.nav-buttons.animate-in,
+.info-section.animate-in {
+    animation-name: fadeInUpCentered;
+}
+
+.spline-model.animate-in {
+    animation-name: fadeInUpCenteredBoth;
+}
+
+.delay-1 {
+    animation-delay: 0.4s;
+}
+
+.delay-2 {
+    animation-delay: 0.8s;
+}
+
+.delay-3 {
+    animation-delay: 1.2s;
+}
+
+.delay-4 {
+    animation-delay: 1.6s;
+}
+
+.delay-5 {
+    animation-delay: 2.0s;
+}
+
+.delay-6 {
+    animation-delay: 2.4s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-left-text {
+        font-size: 28px;
+        top: 20px;
+        left: 20px;
+        letter-spacing: 4px;
+    }
+
+    .join-button {
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .logo-image {
+        display: none;
+    }
+
+    .tagline {
+        top: 100px;
+        left: 20px;
+        font-size: 24px;
+        width: 90%;
+        line-height: 1.4;
+    }
+
+    .show-course-button {
+        top: 200px;
+        /* Reduced from 220px */
+        left: 20px;
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .description-text {
+        top: 260px;
+        /* Reduced from 280px */
+        left: 20px;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .info-section {
+        top: 450px;
+        /* Reduced from 550px */
+        width: 90%;
+    }
+
+    .info-heading {
+        font-size: 24px;
+    }
+
+    .info-subheading {
+        font-size: 20px;
+        margin-top: 20px;
+        /* Reduced from 30px */
+    }
+
+    .nav-buttons {
+        position: relative;
+        top: 1250px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 80%;
+        text-align: center;
+    }
+
+    .spline-model {
+        position: relative;
+        top: 260%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        height: 600px;
+        filter: grayscale(100%);
+    }
+
+    .bottom-bar {
+        top: 3200px;
+        /* Adjusted to be below the new model position */
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .footer-content {
+        font-size: 14px;
+    }
+}
